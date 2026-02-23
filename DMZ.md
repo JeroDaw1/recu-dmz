@@ -235,6 +235,13 @@ network:
           via: 192.168.207.50
 ```
 
+Se aplican los cambios:
+
+```bash
+sudo netplan generate
+sudo netplan apply
+```
+
 ```bash
 sudo apt-get install dnsutils iputils-ping -y
 
@@ -243,8 +250,8 @@ sudo apt-get install proftpd -y
 
 Conexión con el servidor FTP mediante Filezilla:
 
-Usuario: `uftp`
-Contraseña: `uftp`
+Usuario: `uftp` (usuario de la máquina Git)
+Contraseña: `uftp` (contraseña de la máquina Git)
 
 Conexión mediante comandos:
 
@@ -252,8 +259,8 @@ Conexión mediante comandos:
 ftp 192.168.207.200
 ```
 
-Usuario: `uftp`
-Contraseña: `uftp`
+Usuario: `uftp` (usuario de la máquina Git)
+Contraseña: `uftp` (contraseña de la máquina Git)
 
 ## Servidor Web
 
@@ -277,6 +284,13 @@ network:
       routes:
         - to: default
           via: 192.168.207.50
+```
+
+Se aplican los cambios:
+
+```bash
+sudo netplan generate
+sudo netplan apply
 ```
 
 Instalar Apache:
